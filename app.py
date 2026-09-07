@@ -33,7 +33,7 @@ st.markdown(
 @st.cache_resource
 def load_model():
     """Loads the pre-trained machine learning model."""
-    model_path = "loan_predictor.pkl"
+    model_path = "Loan_Predictor.pkl"
     if os.path.exists(model_path):
         return joblib.load(model_path)
     return None
@@ -166,7 +166,7 @@ st.markdown(
 
 if model is None:
     st.warning(
-        "⚠️ `loan_predictor.pkl` not found in the root directory. Running in demonstration mode using default rule heuristics."
+        "⚠️ `Loan_Predictor.pkl` not found in the root directory. Running in demonstration mode using default rule heuristics."
     )
 
 # ==========================================
